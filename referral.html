@@ -79,6 +79,29 @@
     grid-template-columns: 1fr; /* stacked */
   }
 }
+
+.banner {
+  width: 728px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+/* Tablet screens */
+@media (max-width: 768px) {
+  .banner {
+    width: 468px;   /* standard “Full Banner” size */
+    height: 60px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .banner {
+    width: 320px;   /* standard “Mobile Leaderboard” size */
+    height: 50px;
+  }
+}
+ 
   </style>
 
 
@@ -140,6 +163,7 @@
 
  
 </div>
+<div class = "banner">
 <center>
 <script type="text/javascript">
 	atOptions = {
@@ -152,6 +176,7 @@
 </script>	
 <script type="text/javascript" src="//www.highperformanceformat.com/35e2bce292c2753f1a49426fda353cc7/invoke.js"></script>
 </center>
+</div>
 <footer class = "footer_container">
 <center>
 <p>Copyright @ 2025 DevNet Solutions</p>
