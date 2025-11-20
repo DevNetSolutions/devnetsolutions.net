@@ -81,32 +81,27 @@
 }
 
 .banner {
-  max-width: 100%;   /* never exceed screen width */
-  height: auto;      /* scale height proportionally */
+  width: 100%;        /* take full width of screen */
+  max-width: 728px;   /* never exceed desktop size */
+  height: auto;       /* scale height automatically */
   margin: 0 auto;
   display: block;
 }
-.banner iframe {
-  max-width: 100%;
-  height: auto;
-}
 
-
-/* Tablet */
+/* Tablet screens */
 @media (max-width: 768px) {
   .banner {
-    max-width: 468px;
-    height: auto;
+    max-width: 468px; /* standard tablet banner */
   }
 }
 
-/* Mobile */
+/* Mobile screens */
 @media (max-width: 480px) {
   .banner {
-    max-width: 320px;
-    height: auto;
+    max-width: 320px; /* standard mobile banner */
   }
 }
+
 
   </style>
 
