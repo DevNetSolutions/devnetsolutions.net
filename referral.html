@@ -67,17 +67,17 @@
     }
 	  
     .banner {
- 	  width: 100%;        /* always take full width */
-	  max-width: 100%;    /* no fixed max width */
-	  height: auto;       /* scale height automatically */
+ 	  display: flex;
+	  justify-content: center;   /* centers horizontally */
+	  align-items: center;       /* centers vertically if needed */
+	  width: 100%;
 	  margin: 0 auto;
-	  display: block;
 	}
 
-	.banner iframe {
-      width: 100%;        /* iframe fills container */
- 	  height: 90px;       /* keep banner height consistent */
- 	  border: none;
+    .banner iframe {
+     max-width: 100%;   /* scale down on smaller screens */
+     height: 90px;
+     border: none;
 	}
 
 	  
@@ -176,7 +176,7 @@
 </div>
 <hr>
 <div class = "banner">
-<center>
+
 <script type="text/javascript">
 	atOptions = {
 		'key' : '35e2bce292c2753f1a49426fda353cc7',
@@ -187,7 +187,6 @@
 	};
 </script>	
 <script type="text/javascript" src="//www.highperformanceformat.com/35e2bce292c2753f1a49426fda353cc7/invoke.js"></script>
-</center>
 </div>
 <hr>
 <footer class = "footer_container">
