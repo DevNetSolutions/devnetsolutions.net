@@ -55,6 +55,28 @@
       text-align: center;
       padding: 10px;
     }
+	  
+	.banner {
+  width: 100%;        /* take full width of screen */
+  max-width: 728px;   /* never exceed desktop size */
+  height: auto;       /* scale height automatically */
+  margin: 0 auto;
+  display: block;
+}
+
+/* Tablet screens */
+@media (max-width: 768px) {
+  .banner {
+    max-width: 468px; /* standard tablet banner */
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .banner {
+    max-width: 320px; /* standard mobile banner */
+  }
+}
   </style>
 
 
@@ -96,9 +118,11 @@
 		'params' : {}
 	};
 </script>
+<div class = "banner">
 <script type="text/javascript" src="//www.highperformanceformat.com/35e2bce292c2753f1a49426fda353cc7/invoke.js"></script>
 </center>
 <hr>
+</div>
 <footer class = "footer_container">
 <center>
 <p>Copyright @ 2025 DevNet Solutions</p>
