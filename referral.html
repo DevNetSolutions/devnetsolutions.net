@@ -67,12 +67,19 @@
     }
 	  
     .banner {
-  	 width: 100%;        /* take full width of screen */
-  	 max-width: 728px;   /* never exceed desktop size */
-  	 height: auto;       /* scale height automatically */
- 	 margin: 0 auto;
- 	 display: block;
+ 	  width: 100%;        /* always take full width */
+	  max-width: 100%;    /* no fixed max width */
+	  height: auto;       /* scale height automatically */
+	  margin: 0 auto;
+	  display: block;
 	}
+
+	.banner iframe {
+      width: 100%;        /* iframe fills container */
+ 	  height: 90px;       /* keep banner height consistent */
+ 	  border: none;
+	}
+
 	  
     /* Tablet */
 @media (max-width: 768px) {
