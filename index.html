@@ -72,10 +72,14 @@
 
 @media (max-width: 480px) {
   .nav_container {
-    grid-template-columns: auto auto auto auto; /* 2 per row */
+    grid-template-columns: repeat(4, 1fr;)
   }
 }
- 
+ .nav_container button {
+    font-size: 14px;   /* shrink text */
+    padding: 8px;      /* shrink padding */
+  }
+}
 	  
     /* Tablet */
 @media (max-width: 768px) {
