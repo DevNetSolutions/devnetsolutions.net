@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+    }
+
+    .nav_container {
+      background: linear-gradient(to right, #E5E4E2, #D3D3D3, #A9A9A9, #B2BEB5);
+      border-style: double;
+      border-color: red;
+      border-radius: 15px;
+      padding: 10px;
+    }
+
+    .titles {
+      color: snow;
+    }
+
+    .buttons {
+      width: 100px;
+      height: 30px;
+      border-style: double;
+      border-color: black;
+      background-color: snow;
+      color: black;
+      margin: 5px;
+    }
+
+    .body_container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+    }
+
+    .body_div {
+      color: black;
+      flex: 1;
+      padding: 20px;
+    }
+
+	 .projects_dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+	.projects_dropdown_cont {
+  	  display: none; /* hidden by default */
+  	  position: absolute;
+  	  background: #fff;
+  	  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	}
+
+	.projects_dropdown_cont button {
+      display: block;
+      padding: 5px 10px;          /* balanced padding */
+      border: 1px solid black;    /* proper border */
+      width: 100%;
+      height: auto;               /* let height adjust naturally */
+      background: snow;
+      text-align: center;
+      cursor: pointer;            /* correct cursor */
+      line-height: normal;        /* ensures text isn’t squished */
+    }
+
+	  
+    .aff_container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 5px;
+      width: 100%;
+      background: white;
+      justify-content: center;
+    }
+
+    
+    .footer_container {
+      background: linear-gradient(to right, #E5E4E2, #D3D3D3, #A9A9A9, #B2BEB5);
+      border-style: double;
+      border-color: red;
+      border-radius: 15px;
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+	    box-sizing: border-box;  
+  }
+	  
+    .banner {
+ 	  display: flex;
+	  justify-content: center;   
+	  align-items: center;       
+	  width: 100%;
+	  margin: 0 auto;
+	}
+
+    .banner iframe {
+     max-width: 100%;   
+     height: 90px;
+     border: none;
+	}
+
+	  
+    /* Tablet */
+@media (max-width: 768px) {
+  .aff_container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .aff_container {
+    grid-template-columns: 1fr; 
+  }
+}
+
+
+/* Tablet screens */
+@media (max-width: 768px) and (min-width: 481px) {
+  .banner {
+    max-width: 468px; 
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .banner {
+    max-width: 320px; 
+  }
+}
+
+
+</style>
+
+
+<title>Preporuke</title>
+</head>
+
+<body>
+<center>  
+<img src="devnet.jpg" alt="Logo" style="width:130px;height:110px;">
+</center>
+<div id="google_translate_element" style = "position: fixed; top: 10px; right: 10px; z-index: 999;"></div>
+	
+<div class = "nav_container">
+<nav class = "titles">
+<ul>
+  <button type = "button" class = "buttons" onclick = "window.location.href = 'index.html'">Naslovnica</button>
+  <div class = "projects_dropdown">
+  <button type = "button" class = "buttons" onclick = "drop()">Projekti</button>
+  <div id = "projects_drop_menu" class = "projects_dropdown_cont">
+  <button type = "button" onclick = "window.location.href = 'apps.html'" class = "buttons_drop">Aplikacije</button>
+  <button type = "button" onclick = "window.location.href = 'android_apps.html'" class = "buttons_drop" >Android aplikacije</button> 
+  <button type = "button" onclick = "window.location.href = 'cyber_sec.html'" class = "buttons_drop">Kibernetička sigurnost</button>
+  </div>
+  </div>
+  <button type = "button" class = "buttons" onclick = "window.location.href = 'referral.html'" name = "Referral">Affiliate</button>
+  <button type = "button" class = "buttons" onclick = "window.location.href = 'contact.html'">Kontakt</button>
+</nav>
+</div>
+
+
+<div class = "body_container">
+
+<div class = "body_div">
+<h1>Affiliate linkovi:</h1>
+
+<hr>
+<center>
+<!--Win server -->
+<h2>Windows Server 2025</h2>
+</center>
+<div class = "aff_container">
+<a href = "https://www.g2a.com/n/awinserver_standard2025"><img src = "https://images.g2a.com/300x400/1x1x1/windows-server-2025-standard-microsoft-key-global-i10000508375001/eb9cc9c530324d3886413972" title = "Windows Server 2025 Standard - g2a.com" style="width:240px;height:300px;"></a>
+
+<a href = "https://www.g2a.com/n/avwinserver_standard2025_24core"><img src = "https://images.g2a.com/300x400/1x1x1/windows-server-2025-standard-24-core-microsoft-key-global-i10000508375002/c021e383db864210b19f41a2" title = "Windows Server 2025 Standard 24Core - g2a.com" style="width:240px;height:300px;"></a>
+
+<a href = "https://www.g2a.com/n/avwinserver2025_datacenter"><img src = "https://images.g2a.com/300x400/1x1x1/windows-server-2025-datacenter-microsoft-key-global-i10000508375006/89cde52857b94a1f8986f266" title = "Windows Server 2025 Datacenter - g2a.com" style="width:240px;height:300px;"></a>
+
+<a href = "https://www.g2a.com/n/avwinserver2025_24core"><img src = "https://images.g2a.com/300x400/1x1x1/windows-server-2025-datacenter-24-core-microsoft-key-global-i10000508375009/89cde52857b94a1f8986f266" title = "Windows Server 2025 Datacenter 24Core - g2a.com" style="width:240px;height:300px;"></a>
+</div>
+<hr>
+
+<!-- vpns's -->
+<center>
+<h2>VPNs</h2>
+</center>
+
+<div class = "aff_container">
+<a href = "https://www.g2a.com/n/avnordvpn10dev_1y"><img src = "https://images.g2a.com/300x400/1x1x1/nordvpn-standard-vpn-service-pc-android-mac-ios-10-devices-1-year-nordvpn-key-global-i10000510606003/0fb6dbe855e54461bca30153" title = "NordVPN 10devices 1 year - g2a.com" style="width:240px;height:300px;"></a>
+
+<a href = "https://www.g2a.com/n/avnortonsecurevpn5dev_1y"><img src = "https://images.g2a.com/300x400/1x1x1/norton-secure-vpn-pc-android-mac-ios-5-devices-1-year-nortonlifelock-key-global-i10000271146002/60c7d2fb390946b29519499c" title = "Norton VPN 5 devices 1 year - g2a.com" style="width:240px;height:300px;"></a>
+
+<a href = "https://www.g2a.com/n/avnortonsecurevpn5dev_5y"><img src = "https://images.g2a.com/300x400/1x1x1/cyberghost-vpn-5-devices-5-years-cyberghost-key-global-i10000048960008/6a1c8fecf3fe4e54ab941221" title = "CyberGhostVPN 5 devices 5 year - g2a.com" style="width:240px;height:300px;"></a>
+
+<a href = "https://www.g2a.com/n/avsurfsharkone_2y"><img src = "https://images.g2a.com/300x400/1x1x1/surfshark-one-antivirus-vpn-bundle-2-years-surfshark-key-global-i10000310407001/8fc2e1dbc0dc45ac978979ea" title = "Surfshark One Bundle (AV + VPN) 2 years - g2a.com" style="width:240px;height:300px;"></a>
+</div>
+<hr>
+
+	
+<!-- Workplace Software -->
+<center>
+<h2>Workplace Software</h2>
+</center>
+<div class = "aff_container">
+<a href = "https://www.g2a.com/n/avsqlserver2022_standard"><img src = "https://images.g2a.com/300x400/1x1x1/microsoft-sql-server-2022-standard-pc-microsoft-key-global-i10000505539001/b77720f114ad4510a3f9019a" title = "Microsoft Sql Server 2022 Standard - g2a.com" style="width:240px;height:300px;"></a>
+
+<a href = "https://www.g2a.com/n/avmsvisio2024_ltscpro"><img src = "https://images.g2a.com/300x400/1x1x1/microsoft-visio-2024-ltsc-professional-pc-microsoft-key-global-i10000508601002/6cdede4bb9294107a407fa0b" title = "Microsoft Visio 2024 Ltsc Pro - g2a.com" style="width:240px;height:300px;"></a>
+
+<a href = "https://www.g2a.com/n/avofficepro_plus2021"><img src = "https://images.g2a.com/300x400/1x1x1/microsoft-office-professional-plus-2021-pc-microsoft-key-global-i10000271538001/202a62e65a5c456ebf44c92e" title = "Microsoft Office Professional Plus 2021 - g2a.com" style="width:240px;height:300px;"></a>
+
+<a href = "https://www.g2a.com/n/avmsofficepro_2019"><img src = "https://images.g2a.com/300x400/1x1x1/microsoft-office-professional-2019-microsoft-key-global-i10000188863001/a60f1fd526c34398b0603aec" title = "Microsoft Office Professional 2019 - g2a.com" style="width:240px;height:300px;"></a>
+	
+<a href = "https://www.g2a.com/n/avadobephotoshopelements-23_lifetime"><img src = "https://images.g2a.com/300x400/1x1x1/adobe-photoshop-elements-2023-pc-1-device-lifetime-adobe-key-global-i10000337003002/46ee93728a8c42a897bd92a2" title = "Adobe Photoshop Elements 2023 Lifetime - g2a.com" style="width:240px;height:300px;"></a>
+
+<a href = "https://www.g2a.com/n/avpremierelements_2025"><img src = "https://images.g2a.com/300x400/1x1x1/adobe-premiere-elements-2025-pc-mac-1-user-lifetime-adobe-key-global-i10000508286002/c61835fb9296459fa46e859c" title = "Adobe Premiere Elements 2025 (Pc, Mac) Lifetime - g2a.com" style="width:240px;height:300px;"></a>
+
+<a href = "https://www.g2a.com/n/avwiftemailproc"><img src = "https://images.g2a.com/300x400/1x1x1/swift-email-processor-pc-1-device-lifetime-swift-key-global-i10000506684001/42706bdfe7e34631bfd38b84" title = "Swift Email Processor - g2a.com" style="width:240px;height:300px;"></a>
+
+<a href = "https://www.g2a.com/n/adcoreldraw2024_lifetime"><img src = "https://images.g2a.com/300x400/1x1x1/coreldraw-standard-2024-pc-1-device-lifetime-corel-key-global-i10000508949001/ccc6386f67c04ccf96670142" title = "CorelDraw Standard 2024 Lifetime - g2a.com" style="width:240px;height:300px;"></a>
+
+</div>
+<hr>
+
+</div>
+<hr>
+<div class = "banner">
+
+<script type="text/javascript">
+	atOptions = {
+		'key' : '35e2bce292c2753f1a49426fda353cc7',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>	
+<script type="text/javascript" src="//www.highperformanceformat.com/35e2bce292c2753f1a49426fda353cc7/invoke.js"></script>
+</div>
+</div>
+
+<hr>
+
+<footer class = "footer_container">
+<center>
+<p>Copyright @ 2025 DevNet Solutions</p>
+</center>
+</footer>
+
+<!-- dropdown menu javascr -->
+<script>
+    function drop() {
+      const menu = document.getElementById("projects_drop_menu");
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+
+   
+  </script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'hr',   
+        includedLanguages: 'en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+</script>
+
+<script type="text/javascript" 
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+	
+</body>
+
+</html>
+
+
