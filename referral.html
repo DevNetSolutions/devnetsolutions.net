@@ -76,7 +76,7 @@
       display: grid;
       grid-template-columns: auto auto auto auto;
       gap: 5px;
-      width: 100% !important;
+      width: 100%;
       background: white;
       justify-content: center;
     }
@@ -112,6 +112,7 @@
 @media (max-width: 1024px) {
   .aff_container {
     grid-template-columns: repeat(2, 1fr); 
+	max-width: 100% !important;
   }
 }
 
@@ -119,6 +120,7 @@
 @media (max-width: 480px) {
   .aff_container {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+	max-width: 100% !important;
   }
 }
 
