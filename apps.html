@@ -111,7 +111,23 @@
     grid-template-columns: repeat(2, 1fr); 
   }
   .apps_cont {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: 1fr; 
+    width: 100%;            
+    box-sizing: border-box; 
+    padding: 10px;         
+    overflow-x: hidden;    
+  }   
+  .apps_cont img {
+    max-width: 100% !important;  
+    height: auto;      
+    display: block;
+    margin: 0 auto;       
+  }
+  .apps_cont h1,
+  .apps_cont h2,
+  .apps_cont h3 {
+    word-wrap: break-word; 
+    text-align: center;   
   }
 }
 
