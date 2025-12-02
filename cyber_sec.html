@@ -47,13 +47,13 @@
       padding: 20px;
     }
 
-	.projects_dropdown {
+	 .projects_dropdown {
       position: relative;
       display: inline-block;
     }
 
 	.projects_dropdown_cont {
-  	  display: none; 
+  	  display: none; /* hidden by default */
   	  position: absolute;
   	  background: #fff;
   	  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -61,26 +61,28 @@
 
 	.projects_dropdown_cont button {
       display: block;
-      padding: 5px 10px;          
-      border: 1px solid black;    
+      padding: 5px 10px;          /* balanced padding */
+      border: 1px solid black;    /* proper border */
       width: 100%;
-      height: auto;              
+      height: auto;               /* let height adjust naturally */
       background: snow;
       text-align: center;
-      cursor: pointer;          
-      line-height: normal;        
+      cursor: pointer;            /* correct cursor */
+      line-height: normal;        /* ensures text isn’t squished */
     }
 
 	  
-	.apps_cont {
-	display: grid;
-	grid-template-columns: auto;
-	border-style: inset;
-	border-color: black;
-	border-radius: 5px;
-	}	
+    .aff_container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 5px;
+      width: 100%;
+      background: white;
+      justify-content: center;
+    }
 
-  .footer_container {
+    
+    .footer_container {
       background: linear-gradient(to right, #E5E4E2, #D3D3D3, #A9A9A9, #B2BEB5);
       border-style: double;
       border-color: red;
@@ -88,13 +90,13 @@
       text-align: center;
       padding: 10px;
       width: 100%;
-	    box-sizing: border-box;  
+	  box-sizing: border-box;  
   }
 	  
-	.banner {
+    .banner {
  	  display: flex;
-	  justify-content: center;  
-	  align-items: center;      
+	  justify-content: center;   
+	  align-items: center;       
 	  width: 100%;
 	  margin: 0 auto;
 	}
@@ -104,24 +106,27 @@
      height: 90px;
      border: none;
 	}
+
 	  
     /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .aff_container {
     grid-template-columns: repeat(2, 1fr); 
+	max-width: 100% !important;
   }
 }
 
 /* Mobile */
 @media (max-width: 480px) {
   .aff_container {
-    grid-template-columns: 1fr; 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+	max-width: 100% !important;
   }
 }
 
 
 /* Tablet screens */
-@media (max-width: 768px) and (min-width: 481px) {
+@media (max-width: 1024px) and (min-width: 481px) {
   .banner {
     max-width: 468px; 
   }
@@ -131,12 +136,14 @@
 @media (max-width: 480px) {
   .banner {
     max-width: 320px; 
+  }
 }
-	  
-  </style>
 
 
-<title>Projekti</title>
+</style>
+
+
+<title>CyberSec</title>
 </head>
 
       
