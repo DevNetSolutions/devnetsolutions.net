@@ -116,25 +116,34 @@
 	}
 
 	  
-    /* Tablet */
-@media (max-width: 1024px) {
-  .aff_container {
-    grid-template-columns: repeat(2, 1fr); 
-	max-width: 100% !important;
-  }
-}
-
 /* Mobile */
 @media (max-width: 480px) {
   .aff_container {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-	max-width: 100% !important;
+    grid-template-columns: 1fr; 
+  }   
+  .apps_cont {
+    grid-template-columns: 1fr; 
+    width: 100%;            
+    box-sizing: border-box; 
+    padding: 10px;         
+    overflow-x: hidden;    
+  }   
+  .apps_cont img {
+    max-width: 100% !important;  
+    height: auto;      
+    display: block;
+    margin: 0 auto;       
+  }
+  .apps_cont h1,
+  .apps_cont h2,
+  .apps_cont h3 {
+    word-wrap: break-word; 
+    text-align: center;   
   }
 }
 
-
 /* Tablet screens */
-@media (max-width: 1024px) and (min-width: 481px) {
+@media (max-width: 768px) and (min-width: 481px) {
   .banner {
     max-width: 468px; 
   }
@@ -145,10 +154,9 @@
   .banner {
     max-width: 320px; 
   }
-}
+}	  
+  </style>
 
-
-</style>
 
 
 <title>CyberSec</title>
