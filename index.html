@@ -71,6 +71,12 @@
       line-height: normal;       
     }
 
+	.netw_cont {
+	display: grid;
+	grid-template-columns: auto;
+    background-color: white;
+	}	
+
 	
 	.rjesenja {
       display: grid;
@@ -114,13 +120,26 @@
 	
 	  
     /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .aff_container {
     grid-template-columns: repeat(2, 1fr);
   }
   .rjesenja {
 	  grid-template-columns: repeat(4, 1fr);
-	   }  	
+	   } 
+  .netw_cont {
+    grid-template-columns: 1fr; 
+    width: 100%;            
+    box-sizing: border-box; 
+    padding: 10px;         
+    overflow-x: hidden;    
+  }   
+  .netw_cont img {
+    max-width: 100% !important;  
+    height: auto;      
+    display: block;
+    margin: 0 auto;       
+  }
 }
 
 /* Mobile */
@@ -130,6 +149,19 @@
   }
   .rjesenja { 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .netw_cont {
+    grid-template-columns: 1fr; 
+    width: 100%;            
+    box-sizing: border-box; 
+    padding: 10px;         
+    overflow-x: hidden;    
+  }   
+  .netw_cont img {
+    max-width: 100% !important;  
+    height: auto;      
+    display: block;
+    margin: 0 auto;       
   }
 }
 
@@ -213,7 +245,7 @@
 <li>Servers (Pristupna točka, korisnik usluge) na kojoj se nalaze mysql server i ostalo.</li>
 <li>Virtualne mašine korištene u projektu: Kali Linux, Win10, Metasploitable2</li>
 </ul
-<div class = "aff_container">
+<div class = "netw_cont">
 <a href = "Showcase/networklab_pentest.png"><img src = "Showcase/networklab_pentest.png" title = "Networking Lab" style="max-width: 900px; height: auto; display: block;"></a>
 </div>
 <hr>
