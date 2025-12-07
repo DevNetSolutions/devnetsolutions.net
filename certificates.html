@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+    }
+
+    .nav_container {
+      background: linear-gradient(to right, #E5E4E2, #D3D3D3, #A9A9A9, #B2BEB5);
+      border-style: double;
+      border-color: red;
+      border-radius: 15px;
+      padding: 10px;
+    }
+
+    .titles {
+      color: white;
+    }
+
+    .buttons {
+      width: 100px;
+      height: 30px;
+      border-style: double;
+      border-color: black;
+      background-color: snow;
+      color: black;
+      margin: 5px;
+    }
+
+    .body_container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+    }
+
+    .body_div {
+      color: black;
+      flex: 1;
+      padding: 20px;
+    }
+
+	 .projects_dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+	.projects_dropdown_cont {
+  	  display: none; 
+  	  position: absolute;
+  	  background: #fff;
+  	  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	}
+
+	.projects_dropdown_cont button {
+      display: block;
+      padding: 5px 10px;         
+      border: 1px solid black;   
+      width: 100%;
+      height: auto;              
+      background: snow;
+      text-align: center;
+      cursor: pointer;          
+      line-height: normal;       
+    }
+
+  .certs {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: snow;
+      border-style: inset;
+      border-radius: 5px;
+      justify-content: center;
+      margin: 20px;
+      gap: 20px;
+    }
+    .footer_container {
+      background: linear-gradient(to right, #E5E4E2, #D3D3D3, #A9A9A9, #B2BEB5);
+      border-style: double;
+      border-color: red;
+      border-radius: 15px;
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+	    box-sizing: border-box;  
+  }
+
+	 .banner {
+ 	  display: flex;
+	  justify-content: center;   
+	  align-items: center;     
+	  width: 100%;
+	  margin: 0 auto;
+	}
+
+    .banner iframe {
+     max-width: 100%;  
+     height: 90px;
+     border: none;
+	}
+	
+
+    /* Tablet */
+@media (max-width: 768px) {
+  .aff_container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .aff_container {
+    grid-template-columns: 1fr; 
+  }
+}
+
+
+/* Tablet screens */
+@media (max-width: 768px) and (min-width: 481px) {
+  .banner {
+    max-width: 468px; /
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .banner {
+    max-width: 320px; 
+  }
+}
+	  
+	  
+  </style>
+
+<title>Certifikati</title>
+</head>
+
+      
+<body>
+<center>  
+<img src="devnet.jpg" alt="Logo" style="width:130px;height:110px;">
+</center>
+<div id="google_translate_element" style = "position: fixed; top: 10px; right: 10px; z-index: 999;"></div>
+	
+<div class = "nav_container">
+<nav class = "titles">
+<ul>
+  <button type = "button" class = "buttons" onclick = "window.location.href = 'index.html'">Naslovnica</button>
+  <div class = "projects_dropdown">
+  <button type = "button" class = "buttons" onclick = "drop()">Projekti</button>
+  <div id = "projects_drop_menu" class = "projects_dropdown_cont">
+  <button type = "button" onclick = "window.location.href = 'apps.html'" class = "buttons_drop">Aplikacije</button>
+  <button type = "button" onclick = "window.location.href = 'android_apps.html'" class = "buttons_drop" >Android aplikacije</button> 
+  <button type = "button" onclick = "window.location.href = 'cyber_sec.html'" class = "buttons_drop">Kibernetička sigurnost</button>
+  </div>
+  </div>
+  <button type = "button" class = "buttons" onclick = "window.location.href = 'referral.html'" name = "Referral">Affiliate</button>
+  <button type = "button" class = "buttons" onclick = "window.location.href = 'certificates.html'">Certifikati</button>
+  <button type = "button" class = "buttons" onclick = "window.location.href = 'contact.html'">Kontakt</button>
+</nav>
+</div>
+
+
+<div class = "body_container">
+
+<div class = "body_div">
+
+<h1>Certifikati:</h1>
+<hr>
+<div class = "certs">
+<img src = "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-MXQL671JGM.pdf" style = "width: 500px; height: 325px;">
+<img src = "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-KAP8KTNXUL.pdf" style = "width: 500px; height: 325px;">
+<img src = "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-OLWCRONXGU.pdf" style = "width: 500px; height: 325px;">
+<img src = "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-VRZMYF7NGK.pdf" style = "width: 500px; height: 325px;">
+<img src = "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-1IIAOXC3EC.pdf" style = "width: 500px; height: 325px;">
+<img src = "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-CFAVNJ80MJ.pdf" style = "width: 500px; height: 325px;">
+
+</div>
+<hr>
+<div class = "banner">
+<script type="text/javascript">
+	atOptions = {
+		'key' : '35e2bce292c2753f1a49426fda353cc7',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/35e2bce292c2753f1a49426fda353cc7/invoke.js"></script>  
+</div>
+</div>
+
+<hr>
+
+<footer class = "footer_container">
+<center>
+<p>Copyright @ 2025 DevNet Solutions</p>
+</center>
+</footer>
+
+<!-- dropdown menu javascr -->
+<script>
+    function drop() {
+      const menu = document.getElementById("projects_drop_menu");
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+
+   
+  </script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'hr',   
+        includedLanguages: 'en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+</script>
+
+<script type="text/javascript" 
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+	
+</body>
+
+</html>
+
+
