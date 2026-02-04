@@ -3,21 +3,24 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    html, body {
+	 html, body {
       margin: 0;
       padding: 0;
       height: 100%;
       display: flex;
       flex-direction: column;
-      background-color: white;
+      background: linear-gradient(to bottom right,#1e1d1d, #282626,#343131, #a60909);
     }
 
     .nav_container {
-      background: linear-gradient(to right, #E5E4E2, #D3D3D3, #A9A9A9, #B2BEB5);
-      border-style: double;
+      background: transparent;
+      border-style:hidden;
+      border-bottom-style: inset;
       border-color: red;
-      border-radius: 15px;
+      border-radius: 5px;
+      max-height: 40px;
       padding: 10px;
+      margin-top: -40px;
     }
 
     .titles {
@@ -25,24 +28,31 @@
     }
 
     .buttons {
-      width: 100px;
-      height: 30px;
+      width: fit-content;
+      height: max-content;
       border-style: double;
       border-color: black;
       background-color: snow;
       color: black;
       margin: 5px;
+      font-size: larger;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .buttons:hover {
+      background-color: rgb(255, 238, 238);
+      cursor:grab;
     }
 
     .body_container {
       flex: 1;
       display: flex;
       flex-direction: column;
-      background-color: white;
+  
+      
     }
 
     .body_div {
-      color: black;
+      color: snow;
       flex: 1;
       padding: 20px;
     }
@@ -55,7 +65,7 @@
 	.projects_dropdown_cont {
   	  display: none; 
   	  position: absolute;
-  	  background: #fff;
+  	  background: snow;
   	  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 	}
 
@@ -64,44 +74,46 @@
       padding: 5px 10px;          
       border: 1px solid black;    
       width: 100%;
-      height: auto;               
+      height: auto;            
       background: snow;
       text-align: center;
-      cursor: pointer;           
-      line-height: normal;       
+      cursor: grabbing;           
+      line-height: normal; 
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
     }
-
-	.netw_cont {
-	display: grid;
-	grid-template-columns: auto;
-    background-color: white;
-	}	
-
+  .projects_dropdown_cont button:hover {
+      background-color: rgb(255, 238, 238);
+    }
 	
 	.rjesenja {
-      display: grid;
+    display: grid;
 	  grid-template-columns: auto auto auto auto;
-      gap: 15px;
-      width: 100%;
+    gap: 15px;
+    width: 100%;
 	  border-style: inset;
-	  border-color: black;
-	  border-radius: 5px;
-      background-color: snow;
-      justify-content: left;
+	  border-color: snow;
+	  border-radius: 10px;
+    background: linear-gradient(to bottom right, #282626, #343131);
+    justify-content: left;
+    color: snow;
     }
 
 
 
     .footer_container {
-      background: linear-gradient(to right, #E5E4E2, #D3D3D3, #A9A9A9, #B2BEB5);
-      border-style: double;
-      border-color: red;
-      border-radius: 15px;
+      background: transparent;
+      border-style: dashed;
+      border-top-style: outset;
+      border-color: rgb(0, 0, 0);
+      border-radius: 5px;
       text-align: center;
       padding: 10px;
       width: 100%;
-	    box-sizing: border-box;  
+      box-sizing: border-box;
+      color: snow;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
+   
     
 
 	 .banner {
