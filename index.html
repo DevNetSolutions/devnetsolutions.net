@@ -3,15 +3,16 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-	 html {
- 	 min-height: 100%;
-  	 background: linear-gradient(to bottom right,#1e1d1d, #282626,#343131, #a60909);
-   }
-
-    body {
-    margin: 0;
-    padding: 0;
-    background: transparent;
+	 html, body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right,#1e1d1d, #282626,#343131, #a60909);
+      min-height: 100vh;
+	  background-attachment: fixed;
+    }
+    .main-wrapper {
+      display: flex;
+      flex-direction: column;
     }
 
 	.main-wrapper { 
