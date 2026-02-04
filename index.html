@@ -161,6 +161,27 @@
   }
 }
 
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .buttons {
+    font-size: 16px;
+    padding: 8px 12px;
+    width: auto;
+  }
+
+  .projects_dropdown_cont button {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
+
+
 /* Mobile */
 @media (max-width: 480px) {
   .aff_container {
@@ -181,6 +202,31 @@
     height: auto !important;     
     display: block;
     margin: 0 auto;       
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .buttons {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    margin: 5px 0;
+  }
+
+  .projects_dropdown_cont {
+    width: 100%;
+  }
+
+  .projects_dropdown_cont button {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
   }
 }
 
