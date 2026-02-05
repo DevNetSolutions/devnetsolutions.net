@@ -39,14 +39,16 @@
       height: max-content;
       border-style: double;
       border-color: black;
-      background-color: snow;
+      box-shadow: 5px 6px 2px 2px;
+      background: linear-gradient(to top right, #cfc1c1, #e7bdbd, #f0e0e0, #ffdfdf,#9f9c9c, #252424);
       color: black;
       margin: 5px;
       font-size: larger;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight:600;
     }
     .buttons:hover {
-      background-color: rgb(255, 238, 238);
+      background: linear-gradient(to top right, #fff8f8, #ffcfcf,#ffd3d3, #ffc9c9, #ffa9a9,#ff0101, #121111);
       cursor:grab;
     }
 
@@ -54,8 +56,7 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-  
-      
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
     }
 
     .body_div {
@@ -82,15 +83,17 @@
       border: 1px solid black;    
       width: 100%;
       height: auto;            
-      background: snow;
-      text-align: center;
-      cursor: grabbing;           
+      background: linear-gradient(to top right, #cfc1c1, #e7bdbd, #f0e0e0, #ffdfdf,#9f9c9c, #252424);
+      text-align: center;          
       line-height: normal; 
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+      font-weight: 600; 
     }
   .projects_dropdown_cont button:hover {
-      background-color: rgb(255, 238, 238);
+      background: linear-gradient(to top right, #ffffff, #ffcfcf,#ffefef, #ffffff, #a61616,#ff0101, #121111);
+      cursor: grabbing; 
     }
+
 	
 	.rjesenja {
     display: grid;
@@ -100,12 +103,12 @@
 	  border-style: inset;
 	  border-color: snow;
 	  border-radius: 10px;
+    box-shadow: 2px 3px 8px 3px;
     background: linear-gradient(to bottom right, #282626, #343131);
     justify-content: left;
     color: snow;
+
     }
-
-
 
     .footer_container {
       background: transparent;
@@ -214,7 +217,7 @@
   
 <body>
 <center>  
-<img src="devnet.png" alt = "Logo" style = "width:130px; height:130px ; margin-top:20px; margin-bottom:20px; border-style: outset; border-radius:20px">
+<img src="devnet.png" alt = "Logo" style = "width:80px; height:80px; margin-top:20px; margin-bottom:20px; border-style: outset; border-radius:20px; box-shadow: 5px 6px 2px 2px;">
 </center>
 <div id="google_translate_element" style = "position: fixed; top: 10px; right: 10px; z-index: 999;"></div>
 <div class = "nav_container">
@@ -257,7 +260,7 @@
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6f47eb2b-55a0-4afa-8f6b-bb12b4c4c849" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 </div>
 
-<hr style = "color: red">
+<!-- <hr style = "color: red"> -->
 <div class = "banner">	
 <script type="text/javascript">
 	atOptions = {
@@ -273,6 +276,7 @@
 <h1>Primjer dizajna mreže:</h1>
 <p style = "color: red;">Na slici je prikazano virtualno okruženje korištenog za vježbe dizajna, konfiguracije mrežnih uređaja i penetracijsko testiranje.</p>
 <p>Info:</p>
+<div class = rjesenja>
 <ul>
 <li>ISP (Pružatelj internet usluge)</li>
 <li>Pula (Pristupna lokacija, korisnik usluge)</li>
@@ -280,12 +284,13 @@
 <li>VRF (Također pristupna lokacija, korisnik usluge) koja koristi tehnologiju (Virtual Routing and Forwarding) po čemu je nazvana</li>
 <li>Servers (Pristupna lokacija, korisnik usluge) na kojoj se nalaze mysql server i ostalo</li>
 <li>Virtualne mašine korištene u projektu: Kali Linux, Win10, Metasploitable2</li>
-</ul
+</ul>
 <div class = "netw_cont">
+<hr>
 <a href = "Showcase/networklab_pentest.png"><img src = "Showcase/networklab_pentest.png" title = "Networking Lab" style="max-width: 100%; height: auto; display: block; margin: 0 auto;"></a>
-<hr style = "color: red;">
+<hr>
 </div>
-	
+</div>
 <script
   async="async"
   data-cfasync="false"
