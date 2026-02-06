@@ -187,14 +187,17 @@
   }
 	
   .buttons {
-   display: flex;
    flex-direction: row;
    gap: 20px;
+   min-width: 0;
+   max-width:480px;
+   margin: 0 auto;
+   margin-top: 20px;
+   margin-bottom: 20px;
    flex-wrap: nowrap;
    justify-content: center;
-  }	  
-}
-
+   }
+ }
 
 /* Tablet screens */
 @media (max-width: 768px) and (min-width: 481px) {
