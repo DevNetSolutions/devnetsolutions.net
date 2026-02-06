@@ -165,8 +165,7 @@
   .aff_container {
     grid-template-columns: 1fr; 
   } 
-	
-	
+		
   .certs {
     grid-template-columns: 1fr; 
     max-width: 100%;  
@@ -181,6 +180,33 @@
     display: block;
     margin: 0 auto;       
   }
+  .buttons {
+   flex-direction: row;
+   gap: 10px;
+   max-width: 480px;
+   width:100%;
+   margin: 0 auto;  
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   box-shadow: 2px 3px 1px 1px;
+   }
+  .buttons button  {
+   flex: 1 1 0;
+   max-width: none;
+   min-width: 0;
+   text-align: center;
+   } 
+  .projects_dropdown {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: none;
+  display: flex;
+  box-shadow: 2px 3px 1px 1px;
+}
+
+.projects_dropdown > button {
+  flex: 1;
+}
 }
 
 
