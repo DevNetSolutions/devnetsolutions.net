@@ -164,7 +164,13 @@
 @media (max-width: 480px) {
   .aff_container {
     grid-template-columns: 1fr; 
-  }   
+  } 
+	
+  .buttons { 
+	display: grid !important;
+	grid-template-columns: repeat(2, 1fr); 
+	}
+	
   .certs {
     grid-template-columns: 1fr; 
     max-width: 100%;  
