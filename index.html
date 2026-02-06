@@ -22,7 +22,7 @@
       border-bottom-style: inset;
       border-color: red;
       border-radius: 5px;
-      max-height: 40px;
+      mix-height: 40px;
       padding: 10px;
 	  margin-top: -40px;
     }
@@ -166,11 +166,31 @@
 
 /* Mobile */
 @media (max-width: 480px) {
+  .nav_container { 
+	  margin-top: 0 !important; 
+	  position: relative; z-index: 10; 
+  }
+  .buttons, .projects_dropdown_cont button { 
+	  cursor: pointer !important; 
+	  touch-action: manipulation !important; 
+	  padding: 14px !important; 
+	  font-size: 18px !important; 
+  }
+   .buttons { 
+	   box-shadow: 2px 3px 4px rgba(0,0,0,0.5) !important; 
+   }
+   .projects_dropdown_cont { 
+	   position: relative !important; 
+	   display: block !important; 
+   }
+	.projects_dropdown { 
+		width: 100% !important; 
+	}
   .aff_container {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
   }
   .rjesenja { 
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)) !important;
   }
   .netw_cont {
     grid-template-columns: 1fr; 
