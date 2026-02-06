@@ -165,35 +165,17 @@
 
 
 /* Mobile */
+/* Mobile */
 @media (max-width: 480px) {
-  .nav_container { 
-	  margin-top: 0 !important; 
-	  position: relative; z-index: 10; 
-  }
-  .buttons, .projects_dropdown_cont button { 
-	  cursor: pointer !important; 
-	  touch-action: manipulation !important; 
-	  padding: 14px !important; 
-	  font-size: 18px !important; 
-  }
-   .buttons { 
-	   box-shadow: 2px 3px 4px rgba(0,0,0,0.5) !important;
-	   flex: 1 1 auto; 
-	   min-width: 80px; 
-	   margin: 5px; }
-   }
-   .projects_dropdown_cont { 
-	   position: relative !important; 
-   }
-	.projects_dropdown { 
-		width: 100% !important; 
-	}
   .aff_container {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
   }
+
+  /* FIX: reduce min width so items fit on vertical mobile */
   .rjesenja { 
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)) !important;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
+
   .netw_cont {
     grid-template-columns: 1fr; 
     width: 100%;            
@@ -201,6 +183,7 @@
     padding: 10px;         
     overflow-x: hidden;    
   }   
+
   .netw_cont img {
     max-width: 100% !important;  
     height: auto !important;     
@@ -208,7 +191,6 @@
     margin: 0 auto;       
   }
 }
-
 
 /* Tablet screens */
 @media (max-width: 768px) and (min-width: 481px) {
