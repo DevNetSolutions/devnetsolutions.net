@@ -161,19 +161,22 @@
   }
 }
 
-
-
-
-
 /* Mobile */
 @media (max-width: 480px) {
   .aff_container {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
   }
 
-  /* FIX: reduce min width so items fit on vertical mobile */
+
   .rjesenja { 
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    justify-items: center;     
+  }
+
+  .rjesenja .buttons {
+    width: 100%;                  
+    max-width: 140px;           
+    text-align: center;
   }
 
   .netw_cont {
@@ -191,6 +194,9 @@
     margin: 0 auto;       
   }
 }
+
+
+
 
 /* Tablet screens */
 @media (max-width: 768px) and (min-width: 481px) {
