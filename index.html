@@ -168,7 +168,6 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
   }
 
- 
   .rjesenja { 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -176,12 +175,20 @@
     justify-items: center;
   }
 
-  .buttons {
-    width: 100% !important;      
+  .buttons,
+  .projects_dropdown > button {
+    width: 100% !important;
     max-width: 140px !important;
     text-align: center;
-    white-space: normal;        
-    word-break: break-word;     
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .projects_dropdown {
+    width: 100% !important;
+    max-width: 140px !important;
+    display: flex;
+    justify-content: center;
   }
 
   .netw_cont {
@@ -199,6 +206,7 @@
     margin: 0 auto;       
   }
 }
+
 
 /* Tablet screens */
 @media (max-width: 768px) and (min-width: 481px) {
