@@ -15,14 +15,17 @@
       flex-direction: column;
     }
 
-
+	.main-wrapper { 
+	  display: flex; 
+	  flex-direction: column; 
+	}
     .nav_container {
       background: transparent;
       border-style:hidden;
       border-bottom-style: inset;
       border-color: red;
       border-radius: 5px;
-      mix-height: 40px;
+      max-height: 40px;
       padding: 10px;
 	  margin-top: -40px;
     }
@@ -161,43 +164,17 @@
   }
 }
 
+
+
+
 /* Mobile */
 @media (max-width: 480px) {
-
   .aff_container {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
   }
-
   .rjesenja { 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 10px;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-
-  .buttons {
-    width: 100% !important;      
-    max-width: 140px !important; 
-    text-align: center;
-    white-space: normal;         
-    word-break: break-word;      
-  }
-
-  .projects_dropdown {
-    width: 100% !important;
-    max-width: 140px !important;
-    display: flex;
-    justify-content: center;
-  }
-
-  .projects_dropdown > button {
-    width: 100% !important;
-    max-width: 140px !important;
-    text-align: center;
-    white-space: normal;
-    word-break: break-word;
-  }
-
   .netw_cont {
     grid-template-columns: 1fr; 
     width: 100%;            
@@ -205,7 +182,6 @@
     padding: 10px;         
     overflow-x: hidden;    
   }   
-
   .netw_cont img {
     max-width: 100% !important;  
     height: auto !important;     
@@ -232,6 +208,8 @@
 	  
   </style>
 
+	  
+  </style>
 
 <title>Naslovnica</title>
 </head>
