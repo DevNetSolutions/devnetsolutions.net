@@ -94,18 +94,21 @@
 	
 	.rjesenja {
     display: grid;
-	  grid-template-columns: auto auto auto auto;
+	grid-template-columns: auto auto auto auto;
     gap: 15px;
     width: 100%;
-	  border-style: inset;
-	  border-color: snow;
-	  border-radius: 10px;
+	border-style: inset;
+	border-color: snow;
+	border-radius: 10px;
     box-shadow: 2px 3px 8px 3px;
     background: linear-gradient(to bottom right, #282626, #343131);
-    justify-content: left;
+    justify-content: start;
     color: snow;
 
     }
+	.rjesenja > div[data-iframe-width] {
+    margin-top: 20px;
+}
 
     .footer_container {
       background: transparent;
