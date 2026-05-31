@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right,#1e1d1d, #282626,#343131, #a60909);
+      min-height: 100vh;
+	  background-attachment: fixed;
+    }
+	  
+    .main-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav_container {
+      background: transparent;
+      border-style:hidden;
+      border-bottom-style: inset;
+      border-color: red;
+      border-radius: 5px;
+      max-height: 40px;
+      padding: 10px;
+	  margin-top: -40px;
+    }
+
+    .titles {
+      color: white;
+    }
+
+    .buttons {
+      width: auto;
+      height: max-content;
+      border-style: double;
+      border-color: black;
+      box-shadow: 5px 6px 2px 2px;
+      background: linear-gradient(to top right, #cfc1c1, #e7bdbd, #f0e0e0, #ffdfdf,#9f9c9c, #252424);
+      color: black;
+      margin: 5px;
+	  margin-top: 20px;
+      font-size: larger;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight:400;
+    }
+    .buttons:hover {
+      background: linear-gradient(to top right, #fff8f8, #ffcfcf,#ffd3d3, #ffc9c9, #ffa9a9,#ff0101, #121111);
+      cursor:grab;
+    }
+
+    .body_container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    }
+	.body_container h1 {
+	  font-size: 20px;
+	 }
+	.body_container h2 {
+	  font-size: 18px;
+	 }
+	.body_container p {
+	  font-size: 16px;
+	 }
+    .body_div {
+      color: snow;
+      flex: 1;
+      padding: 20px;
+    }
+
+	 .projects_dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+	.projects_dropdown_cont {
+  	  display: none; 
+  	  position: absolute;
+  	  background: snow;
+  	  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	}
+
+	.projects_dropdown_cont button {
+      display: block;
+      padding: 5px 10px;          
+      border: 1px solid black;    
+      width: 100%;
+      height: auto;            
+      background: linear-gradient(to top right, #cfc1c1, #e7bdbd, #f0e0e0, #ffdfdf,#9f9c9c, #252424);
+      text-align: center;          
+      line-height: normal; 
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+      font-weight: 600; 
+    }
+  .projects_dropdown_cont button:hover {
+      background: linear-gradient(to top right, #ffffff, #ffcfcf,#ffefef, #ffffff, #a61616,#ff0101, #121111);
+      cursor: grabbing; 
+    }
+
+	.apps_cont {
+	display: grid;
+	grid-template-columns: auto;
+	border-style: inset;
+	border-color: snow;
+	border-radius: 10px;
+    box-shadow: 2px 3px 8px 3px;
+    background: linear-gradient(to bottom right, #282626, #343131);
+    color: snow;
+
+    }
+
+    .footer_container {
+      background: transparent;
+      border-style: dashed;
+      border-top-style: outset;
+      border-color: rgb(0, 0, 0);
+      border-radius: 5px;
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      color: snow;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+	  
+	.banner {
+ 	  display: flex;
+	  justify-content: center;  
+	  align-items: center;      
+	  width: 100%;
+	  margin: 0 auto;
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+	}
+
+    .banner iframe {
+     max-width: 100%;   
+     height: 90px;
+     border: none;
+	}
+	  
+    /* Tablet */
+@media (max-width: 1024px) {
+  .aff_container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .apps_cont {
+    grid-template-columns: 1fr; 
+    width: 100%;            
+    box-sizing: border-box; 
+    padding: 10px;         
+    overflow-x: hidden;    
+  }   
+  .apps_cont img {
+    max-width: 100% !important;  
+    height: auto;      
+    display: block;
+    margin: 0 auto;       
+  }
+  .apps_cont h1,
+  .apps_cont h2,
+  .apps_cont h3 {
+    word-wrap: break-word; 
+    text-align: center;   
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .aff_container {
+    grid-template-columns: 1fr; 
+  }   
+  .apps_cont {
+    grid-template-columns: 1fr; 
+    width: 100%;            
+    box-sizing: border-box; 
+    padding: 10px;         
+    overflow-x: hidden;    
+  }   
+  .apps_cont img {
+    max-width: 100% !important;  
+    height: auto;      
+    display: block;
+    margin: 0 auto;       
+  }
+  .apps_cont h1,
+  .apps_cont h2,
+  .apps_cont h3 {
+    word-wrap: break-word; 
+    text-align: center;   
+  }
+  .nav_container {
+      max-height: max-content;
+      padding: 10px;
+	  margin-top: 1px;
+    }	
+  .buttons {
+   flex-direction: row;
+   gap: 10px;
+   max-width: 480px;
+   width:100%;
+   margin: 0 auto;  
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   box-shadow: 2px 3px 1px 1px;
+   }
+  .buttons button  {
+   flex: 1 1 0;
+   max-width: none;
+   min-width: 0;
+   text-align: center;
+   } 
+  .projects_dropdown {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: none;
+  display: flex;
+  box-shadow: 2px 3px 1px 1px;
+}
+
+.projects_dropdown > button {
+  flex: 1;
+ } 
+}
+
+/* Tablet screens */
+@media (max-width: 768px) and (min-width: 481px) {
+  .banner {
+    max-width: 468px; 
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .banner {
+    max-width: 320px; 
+  }
+}	  
+  </style>
+
+
+<title>DevNet's Accounting</title>
+</head>
+
+      
+<body>
+<center>  
+<img src="devnet.png" alt = "Logo" style = "width:80px; height:80px; margin-top:20px; margin-bottom:20px; border-style: outset; border-radius:20px; box-shadow: 5px 6px 2px 2px;">
+</center>
+<div id="google_translate_element" style = "position: fixed; top: 10px; right: 10px; z-index: 999;"></div>
+	
+<div class = "nav_container">
+<nav class = "titles">
+  <button type = "button" class = "buttons" onclick = "window.location.href = 'apps.html'">Aplikacije</button>
+</nav>
+</div>
+
+
+<div class = "body_container">
+<!-- <ul>
+<li><a href = "#Accounting">Idi na "DevNet's Accounting"</a></li>
+<li><a href = "#Bounties">Idi Na "Bounties"</a></li>
+</ul> -->
+<div class = "body_div">
+
+<!-- Accounting-->
+<div class = "apps_cont">
+<h1 id = "Positions">Positions</h1>
+<ul>
+<li><p1>Apple (Silicon)</p1></li>
+<a>Uskoro</a>
+<hr>
+<li><p2>Windows</p2></li>
+<a“>Uskoro</a>
+<hr>
+<li><p3>Linux (Uskoro)</p3></li>
+<a>Uskoro</a>
+<hr>
+<li><p3>Android (Uskoro)</p3></li>
+<a>Uskoro</a>
+<hr>
+</ul>
+<h3>Opis:</h3>
+<p>Positions je aplikacija namijenjena za pronalazak i otvaranje novih poslovnih prilika u IT-U, takozvani "freelancing".</p>
+<p>Zainteresirani za korištenje aplikacije prije njenog objavljivanja mogu se prijaviti putem emaila - "devnetsolutions@protonmail.com" pod naslovom "POSITIONS"</p>
+<p>Ove prijave su ograničene na 100 korisnika</p>
+<p>Nakon objave aplikacije "Positions", korisnici koji su se prijavili putem maila će biti kontaktirani s daljnim informacijama te će im biti omogućen besplatni pristup aplikaciji prvih 90 dana</p>
+
+<h3>Zašto odabrati "Positions?"</h3>
+<p>Nakon pregleda dostupnih Freelancing platformi i korištenja istih, otkrili smo da je dosta teško ili nemoguće doći do poslovne prilike, jer su te platforme često pune lažnih oglasa, a i oni oglasi 
+koji nisu lažni često su nedostupni novijim korisnicima te iz tog razloga mnogi korisnici odustaju u kratkom vremenu.</p>
+<p>Naše prvo riješenje je da se pri registraciji svakog korisnika provjeri njegova pouzdanost tako što će biti potrebno priložiti jedan od certifikata, te dokaz o radu(slike izvršenih projekata - profesionalnih ili onih neizdanih</p>
+<p>Drugo riješenje je to da poslodavac prilikom objavlivanja projekta plaća naknadu za objavu, te svaki freelancer plaća prijavu na isti</p>
+<p>Treće riješenje je da će Positions biti aplikacija za čije se korištenje plaća mjesečna pretplata te je istu ranije potrebno instalirati putem jednog od provjerenih servira, npr. Microsoft store. Positions neće biti dostupan putem web preglednika</p>
+<p>DevNet Solutions naplaćuje isključivo mjesečnu pretplatu na aplikaciju, te ranije navedeno (Objava / prijava) te ne uzima nikakvu proviziju i ne sudjeluje u naplati dovršenih projekata već Poslodavci novac isplačuju direktno korisniku</p>
+
+<h4>Funkcije:</h4>
+<p>Otvaranje novih poslovnih prilika u realnom vremenu pritiskom na tipku "Create".</p>
+<p>Prilike su vidljive svima, ali ograničene na vremenski period i mjesta (max 10 po prilici)</p>
+<p>Otvorene prilike su ograničene ranije određenih vremenskim periodima npr. sat vremena u kojem je potrebno izvršiti prijavu klikom na "Bid"</p>
+<p>Nakon isteka vremenskog roka, prilike se zatvaraju automatski te osoba odgovorna za poziciju bira izvršitelja projekta.</p>
+<p>Nakon završetka projekta, izvršitelj uploada projekt u virtualno okruženje dostupno samo poslodavcu u kojem je dostupan za pregled i testiranje.</p>
+<p>Ako je poslodavac zadovoljan završenim projektom, izvršava se direktna naplata putem vanjskog sustava (Poslodavac - izvršitelj) te se poslodavcu otvara privatni link preko kojeg može preuzeti projekt</p>
+<p>U slučaju nezadovoljstva, poslodavac izdaje upute što treba promijeniti i zadaje novi rok, a ako projekt nije dovršen u ranije definiranom roku ili projekt ne bude dovršen izvršitelj može biti trajno isključen s platforme</p>
+<p>Nakon dovršetka projekta, poslodavac može ocijeniti izvršitelja i ostaviti povratnu informaciju, te se izvršitelj svrstava u kategoriju ocijenjenih korisnika i korisnički grafikon koji prikazuje njegovu aktivnost u realnom vremenu.</p>
+
+
+<!--<p2>Video:</p2>
+<video controls style="max-width: 900px; height: auto; display: block;">
+	<source src = "https://drive.proton.me/urls/CFMW43XVG4#9JYVL5LJTz33" type = "video/mov">
+</video> -->
+
+<p>Prijava u aplikaciju:</p>
+<a href = "Showcase/DevNet's Accounting/1.png"><img src = "Showcase/DevNet's Accounting/1.png" style="max-width: 900px; height: auto; display: block;"></a>
+<p>Dashboard</p>	
+<a href = "Showcase/DevNet's Accounting/2.png"><img src = "Showcase/DevNet's Accounting/2.png" style="max-width: 900px; height: auto; display: block;"></a>
+</div>
+
+</div>
+
+
+
+<footer class = "footer_container">
+<center>
+<p>Copyright @ 2025 DevNet Solutions</p>
+</center>
+</footer>
+
+<!-- dropdown menu javascr -->
+<script>
+    function drop() {
+      const menu = document.getElementById("projects_drop_menu");
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+
+   
+  </script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'hr',   
+        includedLanguages: 'en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+</script>
+
+<script type="text/javascript" 
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+	
+</body>
+
+</html>
+
+
