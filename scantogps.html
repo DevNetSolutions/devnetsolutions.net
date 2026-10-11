@@ -111,32 +111,27 @@
       color: snow;
     }
 
+    /* Screenshots grid (bez okvira, kao referral stranica) */
     .screenshots-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-      margin: 20px 0;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+      width: 100%;
+      justify-content: center;
+      justify-items: center;
+      margin: 0 auto;
     }
 
     .screenshot-item {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.15);
-      border-radius: 10px;
-      padding: 12px;
     }
 
     .screenshot-item p {
-      margin: 0 0 10px;
+      margin: 10px 0 5px;
       text-align: center;
       font-size: 15px;
-    }
-
-    .screenshot-item a {
-      display: block;
-      width: 100%;
     }
 
     .screenshot-item img {
@@ -145,8 +140,6 @@
       object-fit: contain;
       display: block;
       margin: 0 auto;
-      border-radius: 8px;
-      background: rgba(0,0,0,0.2);
     }
 
     .footer_container {
@@ -184,6 +177,9 @@
   .aff_container {
     grid-template-columns: repeat(2, 1fr); 
   }
+  .screenshots-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .apps_cont {
     grid-template-columns: 1fr; 
     width: 100%;            
@@ -210,6 +206,9 @@
   .aff_container {
     grid-template-columns: 1fr; 
   }   
+  .screenshots-grid {
+    grid-template-columns: 1fr;
+  }
   .apps_cont {
     grid-template-columns: 1fr; 
     width: 100%;            
@@ -260,14 +259,6 @@
 
 .projects_dropdown > button {
   flex: 1;
- }
-
- .screenshots-grid {
-   grid-template-columns: 1fr;
- }
-
- .screenshot-item img {
-   height: auto;
  }
 }
 
@@ -325,7 +316,7 @@
 <hr>
 <h3>Funkcije:</h3>
 <p>OCR - ekstrakcija adresa sa slike i slanje u lokalnu bazu podataka</p>  
-<p>Ponalaženje koordinata pomoću zapisa u bazi podataka i slanje na vanjski gps sustav</p>
+<p>Pronalaženje koordinata pomoću zapisa u bazi podataka i slanje na vanjski gps sustav</p>
 <p>Mogućnost označavanja posjećenih adresa s "Isporučeno" (Korisno za dostavne službe)</p>
 
 <hr>
