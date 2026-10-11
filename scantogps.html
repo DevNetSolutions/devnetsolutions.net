@@ -8,9 +8,9 @@
       padding: 0;
       background: linear-gradient(to bottom right,#1e1d1d, #282626,#343131, #a60909);
       min-height: 100vh;
-	  background-attachment: fixed;
+      background-attachment: fixed;
     }
-	  
+      
     .main-wrapper {
       display: flex;
       flex-direction: column;
@@ -24,7 +24,7 @@
       border-radius: 5px;
       max-height: 40px;
       padding: 10px;
-	  margin-top: -40px;
+      margin-top: -40px;
     }
 
     .titles {
@@ -40,7 +40,7 @@
       background: linear-gradient(to top right, #cfc1c1, #e7bdbd, #f0e0e0, #ffdfdf,#9f9c9c, #252424);
       color: black;
       margin: 5px;
-	  margin-top: 20px;
+      margin-top: 20px;
       font-size: larger;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-weight:400;
@@ -56,34 +56,34 @@
       flex-direction: column;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     }
-	.body_container h1 {
-	  font-size: 20px;
-	 }
-	.body_container h2 {
-	  font-size: 18px;
-	 }
-	.body_container p {
-	  font-size: 16px;
-	 }
+    .body_container h1 {
+      font-size: 20px;
+     }
+    .body_container h2 {
+      font-size: 18px;
+     }
+    .body_container p {
+      font-size: 16px;
+     }
     .body_div {
       color: snow;
       flex: 1;
       padding: 20px;
     }
 
-	 .projects_dropdown {
+     .projects_dropdown {
       position: relative;
       display: inline-block;
     }
 
-	.projects_dropdown_cont {
-  	  display: none; 
-  	  position: absolute;
-  	  background: snow;
-  	  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-	}
+    .projects_dropdown_cont {
+      display: none; 
+      position: absolute;
+      background: snow;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
 
-	.projects_dropdown_cont button {
+    .projects_dropdown_cont button {
       display: block;
       padding: 5px 10px;          
       border: 1px solid black;    
@@ -100,16 +100,53 @@
       cursor: grabbing; 
     }
 
-	.apps_cont {
-	display: grid;
-	grid-template-columns: auto;
-	border-style: inset;
-	border-color: snow;
-	border-radius: 10px;
-    box-shadow: 2px 3px 8px 3px;
-    background: linear-gradient(to bottom right, #282626, #343131);
-    color: snow;
+    .apps_cont {
+      display: grid;
+      grid-template-columns: auto;
+      border-style: inset;
+      border-color: snow;
+      border-radius: 10px;
+      box-shadow: 2px 3px 8px 3px;
+      background: linear-gradient(to bottom right, #282626, #343131);
+      color: snow;
+    }
 
+    .screenshots-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+
+    .screenshot-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 10px;
+      padding: 12px;
+    }
+
+    .screenshot-item p {
+      margin: 0 0 10px;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .screenshot-item a {
+      display: block;
+      width: 100%;
+    }
+
+    .screenshot-item img {
+      width: 100%;
+      height: 500px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
+      background: rgba(0,0,0,0.2);
     }
 
     .footer_container {
@@ -125,23 +162,23 @@
       color: snow;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
-	  
-	.banner {
- 	  display: flex;
-	  justify-content: center;  
-	  align-items: center;      
-	  width: 100%;
-	  margin: 0 auto;
-	  margin-top: 20px;
-	  margin-bottom: 20px;
-	}
+      
+    .banner {
+      display: flex;
+      justify-content: center;  
+      align-items: center;      
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
 
     .banner iframe {
-     max-width: 100%;   
-     height: 90px;
-     border: none;
-	}
-	  
+      max-width: 100%;   
+      height: 90px;
+      border: none;
+    }
+      
     /* Tablet */
 @media (max-width: 1024px) {
   .aff_container {
@@ -195,8 +232,8 @@
   .nav_container {
       max-height: max-content;
       padding: 10px;
-	  margin-top: 1px;
-    }	
+      margin-top: 1px;
+    }
   .buttons {
    flex-direction: row;
    gap: 10px;
@@ -223,7 +260,15 @@
 
 .projects_dropdown > button {
   flex: 1;
- } 
+ }
+
+ .screenshots-grid {
+   grid-template-columns: 1fr;
+ }
+
+ .screenshot-item img {
+   height: auto;
+ }
 }
 
 /* Tablet screens */
@@ -238,7 +283,7 @@
   .banner {
     max-width: 320px; 
   }
-}	  
+}    
   </style>
 
 
@@ -251,7 +296,7 @@
 <img src="devnet.png" alt = "Logo" style = "width:80px; height:80px; margin-top:20px; margin-bottom:20px; border-style: outset; border-radius:20px; box-shadow: 5px 6px 2px 2px;">
 </center>
 <div id="google_translate_element" style = "position: fixed; top: 10px; right: 10px; z-index: 999;"></div>
-	
+    
 <div class = "nav_container">
 <nav class = "titles">
   <button type = "button" class = "buttons" onclick = "window.location.href = 'apps.html'">Aplikacije</button>
@@ -274,31 +319,52 @@
 <!--<button onclick="window.open('https://devnetsolutions.gumroad.com/l/ymqhvy?wanted=true', '_blank')" style = "font-size: 15px">Kupi</button> -->
 <hr>
 </ul>
-	<center>
+    <center>
 <h3>Opis:</h3>
 <p>Android aplikacija za pametno prepoznavanje text-a i navigaciju</p>
 <hr>
 <h3>Funkcije:</h3>
 <p>OCR - ekstrakcija adresa sa slike i slanje u lokalnu bazu podataka</p>  
-<p>Pronalaženje koordinata pomoću zapisa u bazi podataka i slanje na vanjski gps sustav</p>
+<p>Ponalaženje koordinata pomoću zapisa u bazi podataka i slanje na vanjski gps sustav</p>
 <p>Mogućnost označavanja posjećenih adresa s "Isporučeno" (Korisno za dostavne službe)</p>
 
 <hr>
 </center>
 <!--<p2>Video:</p2>
 <video controls style="max-width: 900px; height: auto; display: block;">
-	<source src = "https://drive.proton.me/urls/CFMW43XVG4#9JYVL5LJTz33" type = "video/mov">
+    <source src = "https://drive.proton.me/urls/CFMW43XVG4#9JYVL5LJTz33" type = "video/mov">
 </video> -->
 
 <h3>Screenshots:</h3>
-<p>Početni zaslon:</p>
-<a href = "Showcase/ScanToGps/Screenshot_20261010_185818.png"><img src = "Showcase/ScanToGps/Screenshot_20261010_185818.png" style="max-width: 900px; height: 900px; display: block;"></a>
-<p>Rezultati nakon ubacivanja slike</p>	
-<a href = "Showcase/ScanToGps/Screenshot_20261010_190103.png"><img src = "Showcase/ScanToGps/Screenshot_20261010_190103.png" style="max-width: 900px; height: 900px; display: block;"></a>
-<p>Isporučene adrese</p>
-<a href = "Showcase/ScanToGps/Screenshot_20261010_190118.png"><img src = "Showcase/ScanToGps/Screenshot_20261010_190118.png" style="max-width: 900px; height: 900px; display: block;"></a>
-<p>Koordinate iz baze podataka poslane u vanjski gps sustav</p>
-<a href = "Showcase/ScanToGps/Screenshot_20261010_190748.png"><img src = "Showcase/ScanToGps/Screenshot_20261010_190748.png" style="max-width: 900px; height: 900px; display: block;"></a>
+<div class="screenshots-grid">
+  <div class="screenshot-item">
+    <p>Početni zaslon:</p>
+    <a href="Showcase/ScanToGps/Screenshot_20261010_185818.png">
+      <img src="Showcase/ScanToGps/Screenshot_20261010_185818.png" alt="Početni zaslon">
+    </a>
+  </div>
+
+  <div class="screenshot-item">
+    <p>Rezultati nakon ubacivanja slike:</p>
+    <a href="Showcase/ScanToGps/Screenshot_20261010_190103.png">
+      <img src="Showcase/ScanToGps/Screenshot_20261010_190103.png" alt="Rezultati nakon ubacivanja slike">
+    </a>
+  </div>
+
+  <div class="screenshot-item">
+    <p>Isporučene adrese:</p>
+    <a href="Showcase/ScanToGps/Screenshot_20261010_190118.png">
+      <img src="Showcase/ScanToGps/Screenshot_20261010_190118.png" alt="Isporučene adrese">
+    </a>
+  </div>
+
+  <div class="screenshot-item">
+    <p>Koordinate iz baze podataka poslane u vanjski gps sustav:</p>
+    <a href="Showcase/ScanToGps/Screenshot_20261010_190748.png">
+      <img src="Showcase/ScanToGps/Screenshot_20261010_190748.png" alt="Koordinate iz baze podataka poslane u vanjski gps sustav">
+    </a>
+  </div>
+</div>
 
 </div>
 <div class = banner>
@@ -334,7 +400,7 @@
 <script type="text/javascript" 
   src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
 </script>
-	
+    
 </body>
 
 </html>
